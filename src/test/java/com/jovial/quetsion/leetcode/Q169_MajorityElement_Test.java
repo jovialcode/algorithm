@@ -1,6 +1,7 @@
-package com.jovial.leetcode;
+package com.jovial.quetsion.leetcode;
 
 
+import com.jovial.question.leetcode.Q169_MajorityElement;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

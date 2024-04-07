@@ -1,9 +1,9 @@
-package com.jovial.leetcode;
+package com.jovial.question.leetcode;
 
 import java.util.Arrays;
 
 public class Q169_MajorityElement {
-    static class Solution{
+    public static class Solution{
         public int majorityElement(int[] nums) {
             // sorting
             Arrays.sort(nums);

@@ -1,7 +1,7 @@
-package com.jovial.leetcode;
+package com.jovial.question.leetcode;
 
 public class Q80_RemoveDuplicates {
-    static class Solution {
+    public static class Solution {
         public int removeDuplicates(int[] nums) {
             int answerPosition = 1;
             int prevValue = nums[0];

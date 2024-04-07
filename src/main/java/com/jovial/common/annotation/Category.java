@@ -1,12 +1,14 @@
-package com.jovial.common;
+package com.jovial.common.annotation;
+
+import com.jovial.common.QuestionCategory;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface UnsolvedQuestion {
-    String value();
+public @interface Category {
+    QuestionCategory value();
 }

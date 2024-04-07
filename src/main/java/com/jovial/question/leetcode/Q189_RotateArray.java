@@ -1,10 +1,13 @@
-package com.jovial.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.common.UnsolvedQuestion;
+import com.jovial.common.annotation.Category;
+import com.jovial.common.annotation.Unsolved;
+import com.jovial.common.QuestionCategory;
 
-@UnsolvedQuestion(value = "풀이 확인함.")
+@Unsolved(value = "풀이 확인함.")
+@Category(value = QuestionCategory.STRUCTURE)
 public class Q189_RotateArray {
-    static public class Solution {
+    public static class Solution {
         public void rotate(int[] nums, int k) {
             k = k%nums.length;
             reverseArray(nums, 0, nums.length-1);

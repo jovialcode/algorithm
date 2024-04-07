@@ -1,9 +1,9 @@
-package com.jovial.leetcode;
+package com.jovial.question.leetcode;
 
 import java.util.Arrays;
 
 public class Q27_RemoveElement {
-    static class Solution{
+    public static class Solution{
         public int removeElement(int[] nums, int val){
             final int MAX_VALUE = 99;
             int answer = nums.length;
