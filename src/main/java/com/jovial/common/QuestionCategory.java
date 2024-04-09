@@ -5,5 +5,6 @@ public enum QuestionCategory {
     BRUTAL_FORCE,
     GRAPH,
     DP,
-    STRUCTURE
+    STRUCTURE,
+    SIMULATION
 }
