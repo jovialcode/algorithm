@@ -6,5 +6,6 @@ public enum QuestionCategory {
     GRAPH,
     DP,
     STRUCTURE,
-    SIMULATION
+    SIMULATION,
+    BINARY_SEARCH
 }
