@@ -8,5 +8,6 @@ public enum QuestionCategory {
     STRUCTURE,
     SIMULATION,
     BINARY_SEARCH,
-    GREEDY
+    GREEDY,
+    TWO_POINTER
 }

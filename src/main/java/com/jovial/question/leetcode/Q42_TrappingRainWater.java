@@ -1,5 +1,11 @@
 package com.jovial.question.leetcode;
 
+import com.jovial.common.QuestionCategory;
+import com.jovial.common.annotation.Category;
+import com.jovial.common.annotation.Explanation;
+
+@Explanation(value = "It takes 4hours")
+@Category(value = QuestionCategory.TWO_POINTER)
 public class Q42_TrappingRainWater {
     public static class Solution{
         public int trap(int[] height){
