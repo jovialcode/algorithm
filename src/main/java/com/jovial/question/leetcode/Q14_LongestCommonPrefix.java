@@ -1,7 +1,11 @@
 package com.jovial.question.leetcode;
 
+import com.jovial.common.QuestionCategory;
+import com.jovial.common.annotation.Category;
+
 import java.util.Arrays;
 
+@Category(value = QuestionCategory.ARRAY)
 public class Q14_LongestCommonPrefix {
     public static class Solution{
         public String longestCommonPrefix(String[] strs) {

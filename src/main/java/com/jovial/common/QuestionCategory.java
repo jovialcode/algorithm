@@ -9,5 +9,6 @@ public enum QuestionCategory {
     SIMULATION,
     BINARY_SEARCH,
     GREEDY,
-    TWO_POINTER
+    TWO_POINTER,
+    ARRAY
 }
