@@ -10,5 +10,6 @@ public enum QuestionCategory {
     BINARY_SEARCH,
     GREEDY,
     TWO_POINTER,
-    ARRAY
+    ARRAY,
+    BINARY_TREE
 }
