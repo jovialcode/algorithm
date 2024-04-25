@@ -2,6 +2,7 @@ package com.jovial.question.leetcode;
 
 import com.jovial.common.QuestionCategory;
 import com.jovial.common.annotation.Category;
+import com.jovial.question.leetcode.common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,25 +42,6 @@ public class Q100_SameTree {
             }
 
             return dfs(current.left, arr) || dfs(current.right, arr);
-        }
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
         }
     }
 }

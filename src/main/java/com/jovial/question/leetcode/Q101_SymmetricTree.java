@@ -1,5 +1,7 @@
 package com.jovial.question.leetcode;
 
+import com.jovial.question.leetcode.common.TreeNode;
+
 import java.util.Objects;
 
 public class Q101_SymmetricTree {
@@ -17,25 +19,6 @@ public class Q101_SymmetricTree {
             return left.val == right.val &&
                     traverseTree(left.left, right.right) &&
                     traverseTree(left.right, right.left);
-        }
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
         }
     }
 }
