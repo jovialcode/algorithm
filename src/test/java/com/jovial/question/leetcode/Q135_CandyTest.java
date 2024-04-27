@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q135_Candy;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q135_Candy_Test {
+public class Q135_CandyTest {
     @Test
     void testExample_1(){
         int[] ratings = {1,0,2};

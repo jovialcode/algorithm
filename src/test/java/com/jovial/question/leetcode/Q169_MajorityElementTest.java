@@ -1,11 +1,10 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
 
-import com.jovial.question.leetcode.Q169_MajorityElement;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q169_MajorityElement_Test {
+public class Q169_MajorityElementTest {
 
     @Test
     public void testExample_1(){

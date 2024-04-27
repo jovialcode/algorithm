@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q14_LongestCommonPrefix;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q14_LongestCommonPrefix_Test {
+public class Q14_LongestCommonPrefixTest {
     @Test
     void testExample_1(){
         Q14_LongestCommonPrefix.Solution solution = new Q14_LongestCommonPrefix.Solution();

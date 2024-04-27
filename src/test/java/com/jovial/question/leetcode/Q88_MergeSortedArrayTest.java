@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
 
-import com.jovial.question.leetcode.Q88_MergeSortedArray;
 import org.junit.jupiter.api.Test;
 
-public class Q88_MergeSortedArray_Test {
+public class Q88_MergeSortedArrayTest {
 
     @Test
     public void testExample_1(){

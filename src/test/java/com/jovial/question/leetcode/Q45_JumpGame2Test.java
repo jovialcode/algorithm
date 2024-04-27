@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q45_JumpGame2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q45_JumpGame2_Test {
+public class Q45_JumpGame2Test {
     @Test
     public void testExample_1(){
         Q45_JumpGame2.Solution solution = new Q45_JumpGame2.Solution();

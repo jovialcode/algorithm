@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q13_RomanToInteger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q13_RomanToInteger_Test {
+public class Q13_RomanToIntegerTest {
     @Test
     void testExample_1(){
         String s = "III";

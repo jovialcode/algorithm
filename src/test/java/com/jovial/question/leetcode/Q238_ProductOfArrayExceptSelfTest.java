@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q238_ProductOfArrayExceptSelf;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q238_ProductOfArrayExceptSelf_Test {
+public class Q238_ProductOfArrayExceptSelfTest {
     @Test
     void testExample_1(){
         Q238_ProductOfArrayExceptSelf.Solution solution = new Q238_ProductOfArrayExceptSelf.Solution();

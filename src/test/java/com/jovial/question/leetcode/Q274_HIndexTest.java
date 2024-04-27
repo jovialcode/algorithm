@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q274_HIndex;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q274_HIndex_Test {
+public class Q274_HIndexTest {
     @Test
     public void testExample_1(){
         int[] nums ={3,0,6,1,5};

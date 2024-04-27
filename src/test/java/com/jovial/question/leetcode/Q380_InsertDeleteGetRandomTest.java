@@ -1,9 +1,8 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q380_InsertDeleteGetRandom;
 import org.junit.jupiter.api.Test;
 
-public class Q380_InsertDeleteGetRandom_Test {
+public class Q380_InsertDeleteGetRandomTest {
     @Test
     public void testExample_1(){
         Q380_InsertDeleteGetRandom.RandomizedSet randomizedSet = new Q380_InsertDeleteGetRandom.RandomizedSet();

@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q117_PopulatingNextRightPointer;
 import com.jovial.question.leetcode.common.Node;
 import org.junit.jupiter.api.Test;
 
-public class Q117_PopulatingNextRightPointer_Test {
+public class Q117_PopulatingNextRightPointerTest {
     @Test
     void testExample_1(){
 

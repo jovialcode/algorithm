@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q58_LengthOfLastWord;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q58_LengthOfLastWord_Test {
+public class Q58_LengthOfLastWordTest {
     @Test
     void testExample_1(){
         String s = "Hello World";

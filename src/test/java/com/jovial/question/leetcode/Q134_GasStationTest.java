@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q134_GasStation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q134_GasStation_Test {
+public class Q134_GasStationTest {
     @Test
     void testExample_1(){
         Q134_GasStation.Solution solution = new Q134_GasStation.Solution();

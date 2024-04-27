@@ -1,9 +1,8 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q189_RotateArray;
 import org.junit.jupiter.api.Test;
 
-public class Q189_RotateArray_Test {
+public class Q189_RotateArrayTest {
     @Test
     public void testExample_1(){
         int[] nums = {1,2,3,4,5,6,7};

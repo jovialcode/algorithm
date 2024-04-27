@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q26_RemoveDuplicates;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q26_RemoveDuplicates_Test {
+public class Q26_RemoveDuplicatesTest {
     @Test
     public void testExample_1(){
         Q26_RemoveDuplicates.Solution solution = new Q26_RemoveDuplicates.Solution();

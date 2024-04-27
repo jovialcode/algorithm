@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q27_RemoveElement;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Q27_RemoveElement_Test {
+public class Q27_RemoveElementTest {
 
     @Test
     public void testExample_1(){

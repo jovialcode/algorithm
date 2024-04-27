@@ -1,10 +1,9 @@
-package com.jovial.quetsion.leetcode;
+package com.jovial.question.leetcode;
 
-import com.jovial.question.leetcode.Q106_ConstructBinaryTreeFromInorderAndPostOrder;
 import com.jovial.question.leetcode.common.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class Q106_ConstructBinaryTreeFromPreorderAndInorder_Test {
+public class Q106_ConstructBinaryTreeFromPreorderAndInorderTest {
     @Test
     void testExample_1(){
         Q106_ConstructBinaryTreeFromInorderAndPostOrder.Solution solution = new Q106_ConstructBinaryTreeFromInorderAndPostOrder.Solution();
