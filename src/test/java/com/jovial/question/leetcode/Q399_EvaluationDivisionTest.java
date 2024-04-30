@@ -54,7 +54,7 @@ class Q399_EvaluationDivisionTest {
     @Test
     void testExample_5(){
         var equations = List.of(List.of("b","a"),List.of("c","b"),List.of("d","c"),List.of("e","d"),List.of("f","e"),List.of("g","f"),List.of("h","g"),List.of("i","h"),List.of("j","i"),List.of("k","j"),List.of("k","l"),List.of("l","m"),List.of("m","n"),List.of("n","o"),List.of("o","p"),List.of("p","q"),List.of("q","r"),List.of("r","s"),List.of("s","t"),List.of("t","u"));
-        var values = new double[]{1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05,1e-05};
+        var values = new double[]{0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001,0.00001};
         var queries = List.of(List.of("a","u"));
 
         Q399_EvaluationDivision.Solution solution = new Q399_EvaluationDivision.Solution();

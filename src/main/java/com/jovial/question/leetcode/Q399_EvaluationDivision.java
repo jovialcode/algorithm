@@ -27,7 +27,7 @@ public class Q399_EvaluationDivision {
 
                 edges[fromIndex][toIndex] = val;
                 edges[fromIndex][fromIndex] = 1.0;
-                edges[toIndex][fromIndex] = 1.0/val;
+                edges[toIndex][fromIndex] = 1/val;
                 edges[toIndex][toIndex] = 1.0;
             }
 
@@ -58,6 +58,7 @@ public class Q399_EvaluationDivision {
             for (int k = 0; k < maxSize; k++) {
                 for (int j = 0; j < maxSize; j++) {
                     for (int i = 0; i < maxSize; i++){
+                        if(i == k || j == k || i == j) continue;
                         if(edges[i][k] > 0.0 && edges[k][j] > 0.0)
                             edges[i][j] = edges[i][k] * edges[k][j];
                     }
