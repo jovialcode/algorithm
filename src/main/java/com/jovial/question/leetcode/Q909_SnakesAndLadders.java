@@ -34,7 +34,6 @@ public class Q909_SnakesAndLadders {
                 if(board[x][y] != -1)
                     next = board[x][y];
 
-                if(next > finish) continue;
                 if(visit[next] > visit[current] + 1){
                     visit[next] = visit[current] + 1;
                     bfs(board, visit, next);

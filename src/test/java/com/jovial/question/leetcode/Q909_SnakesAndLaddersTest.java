@@ -19,7 +19,7 @@ class Q909_SnakesAndLaddersTest {
         };
 
         Q909_SnakesAndLadders.Solution solution = new Q909_SnakesAndLadders.Solution();
-        solution.snakesAndLadders(board);
+        assertEquals(4, solution.snakesAndLadders(board));
     }
 
     @Test
