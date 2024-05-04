@@ -12,5 +12,6 @@ public enum QuestionCategory {
     TWO_POINTER,
     ARRAY,
     BINARY_TREE,
-    BFS
+    BFS,
+    STACK
 }
