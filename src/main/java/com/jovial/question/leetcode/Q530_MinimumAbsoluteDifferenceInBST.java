@@ -1,4 +1,4 @@
-package com.jovial.question;
+package com.jovial.question.leetcode;
 
 import com.jovial.common.QuestionCategory;
 import com.jovial.common.annotation.Category;
