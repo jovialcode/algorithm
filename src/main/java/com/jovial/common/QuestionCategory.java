@@ -13,5 +13,6 @@ public enum QuestionCategory {
     ARRAY,
     BINARY_TREE,
     BFS,
+    DFS,
     STACK
 }
