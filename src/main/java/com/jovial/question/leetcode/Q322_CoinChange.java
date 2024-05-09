@@ -15,7 +15,6 @@ public class Q322_CoinChange {
         public int coinChange(int[] coins, int amount) {
             final int MAX_VALUE = 100001;
             int[] dp = new int[10001];
-            Arrays.sort(coins);
             Arrays.fill(dp, MAX_VALUE);
 
             Queue<Integer> queue = new LinkedList<>();
@@ -24,11 +23,11 @@ public class Q322_CoinChange {
             dp[amount] = 0;
             while (!queue.isEmpty()) {
                 int remain = queue.poll();
-                for (int i = 0; i < coins.length; i++) {
-                    if(remain-coins[i] < 0) continue;
-                    if(dp[remain-coins[i]] > dp[remain] + 1){
-                        dp[remain-coins[i]] = dp[remain] + 1;
-                        queue.add(remain-coins[i]);
+                for (int coin : coins) {
+                    if (remain - coin < 0) continue;
+                    if (dp[remain - coin] > dp[remain] + 1) {
+                        dp[remain - coin] = dp[remain] + 1;
+                        queue.add(remain - coin);
                     }
                 }
             }
