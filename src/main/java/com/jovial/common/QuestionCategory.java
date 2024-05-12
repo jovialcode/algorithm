@@ -14,5 +14,6 @@ public enum QuestionCategory {
     BINARY_TREE,
     BFS,
     DFS,
-    STACK
+    STACK,
+    BACKTRACKING
 }
