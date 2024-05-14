@@ -16,5 +16,6 @@ public enum QuestionCategory {
     DFS,
     STACK,
     BACKTRACKING,
-    DIVIDE_CONQUER
+    DIVIDE_CONQUER,
+    HEAP
 }
