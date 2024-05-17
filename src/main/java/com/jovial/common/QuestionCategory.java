@@ -11,6 +11,7 @@ public enum QuestionCategory {
     GREEDY,
     TWO_POINTER,
     ARRAY,
+    STRING,
     BINARY_TREE,
     LINKED_LIST,
     BFS,
