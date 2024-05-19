@@ -19,5 +19,6 @@ public enum QuestionCategory {
     STACK,
     BACKTRACKING,
     DIVIDE_CONQUER,
-    HEAP
+    HEAP,
+    SLIDING_WINDOW
 }
