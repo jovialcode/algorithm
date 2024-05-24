@@ -4,28 +4,26 @@ import com.jovial.common.QuestionCategory;
 import com.jovial.common.annotation.Category;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Category(QuestionCategory.TRIE)
 public class Q208_ImplementTrie {
     public static class Trie {
         private TrieNode root;
-        private Set<String> words;
 
         public Trie() {
             root = new TrieNode();
-            words = new HashSet<>();
         }
 
         public void insert(String word) {
-            words.add(word);
             insert(root, word, 0);
         }
 
         private void insert(TrieNode cur, String word, int index) {
-            if (word.length() == index) return;
+            if (word.length() == index) {
+                cur.isEnd = true;
+                return;
+            }
 
             int adjIndex = hasChar(cur, word.charAt(index));
             if (adjIndex != -1) {
@@ -47,7 +45,20 @@ public class Q208_ImplementTrie {
         }
 
         public boolean search(String word) {
-            return words.contains(word);
+            return search(root, word, 0);
+        }
+
+        private boolean search(TrieNode cur, String word, int index) {
+            if (word.length() == index) {
+                return cur.isEnd;
+            }
+
+            int adjIndex = hasChar(cur, word.charAt(index));
+            if (adjIndex == -1) {
+                return false;
+            } else {
+                return search(cur.adj.get(adjIndex), word, index + 1);
+            }
         }
 
         public boolean startsWith(String prefix) {
@@ -68,15 +79,18 @@ public class Q208_ImplementTrie {
 
         private class TrieNode {
             public Character val;
+            public boolean isEnd;
             public List<TrieNode> adj;
 
             public TrieNode() {
                 this.adj = new ArrayList<>();
+                this.isEnd = false;
             }
 
             public TrieNode(Character val) {
                 this.val = val;
                 this.adj = new ArrayList<>();
+                this.isEnd = false;
             }
         }
     }
