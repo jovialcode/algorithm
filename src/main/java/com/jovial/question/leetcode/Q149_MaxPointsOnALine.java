@@ -4,46 +4,53 @@ import com.jovial.common.QuestionCategory;
 import com.jovial.common.annotation.Category;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
 
 @Category(QuestionCategory.GEOMETRY)
 public class Q149_MaxPointsOnALine {
     public static class Solution {
         public int maxPoints(int[][] points) {
+            if (Objects.isNull(points) || points.length == 0) return 0;
+            if (points.length == 1) return 1;
+
             int ans = 0;
-
-            HashMap<Pair, Integer> counts = new HashMap<>();
-
             for (int i = 0; i < points.length; i++) {
-                int fromX = points[i][0];
-                int fromY = points[i][1];
+                HashMap<Pair, Integer> counts = new HashMap<>();
+                int currentMax = 0;
 
                 for (int j = i + 1; j < points.length; j++) {
-                    int toX = points[j][0];
-                    int toY = points[j][1];
+                    int deltaX = points[j][0] - points[i][0];
+                    int deltaY = points[j][1] - points[i][1];
 
-                    int incline = toX - fromX != 0 ? (toY - fromY) / (toX - fromX) : Integer.MAX_VALUE;
-                    int b = fromY - incline * fromX;
+                    int gcd = gcd(deltaX, deltaY);
+                    deltaX /= gcd;
+                    deltaY /= gcd;
 
-                    Pair pair = new Pair(incline, b);
+
+                    Pair pair = new Pair(deltaX, deltaY);
                     counts.merge(pair, 1, Integer::sum);
+                    currentMax = Math.max(currentMax, counts.get(pair) + 1);
                 }
+                ans = Math.max(ans, currentMax);
             }
-
-            for(Integer count: counts.values())
-                ans = Math.max(count, ans);
-
             return ans;
         }
 
-        public class Pair{
-            int incline;
-            int b;
+        private int gcd(int a, int b) {
+            if (b == 0) {
+                return a;
+            }
+            return gcd(b, a % b);
+        }
 
-            public Pair(int incline, int b) {
-                this.incline = incline;
-                this.b = b;
+        public class Pair {
+            int deltaX;
+            int deltaY;
+
+
+            public Pair(int deltaX, int deltaY) {
+                this.deltaX = deltaX;
+                this.deltaY = deltaY;
             }
 
             @Override
@@ -51,12 +58,12 @@ public class Q149_MaxPointsOnALine {
                 if (this == o) return true;
                 if (o == null || getClass() != o.getClass()) return false;
                 Pair pair = (Pair) o;
-                return incline == pair.incline && b == pair.b;
+                return deltaX == pair.deltaX && deltaY == pair.deltaY;
             }
 
             @Override
             public int hashCode() {
-                return Objects.hash(incline, b);
+                return Objects.hash(deltaX, deltaY);
             }
         }
     }
