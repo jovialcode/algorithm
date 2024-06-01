@@ -6,17 +6,17 @@ import com.jovial.common.annotation.Category;
 import java.util.Arrays;
 
 @Category(QuestionCategory.DP)
-public class Q123_BestTimeToByuAndSellStock3 {
+public class Q188_BestTimeToByuAndSellStock4 {
     public static class Solution {
-        public int maxProfit(int[] prices) {
-            int[][][] dp = new int[prices.length][2][3];
+        public int maxProfit(int k, int[] prices) {
+            int[][][] dp = new int[prices.length][2][k+1];
 
             for (int i = 0; i < dp.length; i++) {
                 for (int j = 0; j < dp[i].length; j++)
                     Arrays.fill(dp[i][j], -1);
             }
 
-            return solve(prices, dp, 0, 0, 2);
+            return solve(prices, dp, 0, 0, k);
         }
 
         private int solve(int[] prices, int[][][] dp, int cur, int buy, int cnt) {
