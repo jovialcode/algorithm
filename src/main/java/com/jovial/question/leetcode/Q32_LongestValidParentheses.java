@@ -2,10 +2,12 @@ package com.jovial.question.leetcode;
 
 import com.jovial.common.QuestionCategory;
 import com.jovial.common.annotation.Category;
+import com.jovial.common.annotation.Explanation;
 
 import java.util.Stack;
 
 @Category(QuestionCategory.GREEDY)
+@Explanation("Stack with Index is better a solution")
 public class Q32_LongestValidParentheses {
     public static class Solution {
         public int longestValidParentheses(String s) {
