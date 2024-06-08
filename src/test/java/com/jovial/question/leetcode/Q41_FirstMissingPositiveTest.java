@@ -15,7 +15,7 @@ class Q41_FirstMissingPositiveTest {
     @Test
     void testExample2() {
         var nums = new int[]{3, 4, -1, 1};
-        Q41_FirstMissingPositive.Solution solution = new Q41_FirstMissingPositive.Solution();
+        Q41_FirstMissingPositive.Solution2 solution = new Q41_FirstMissingPositive.Solution2();
         assertEquals(2, solution.firstMissingPositive(nums));
     }
 
@@ -50,7 +50,7 @@ class Q41_FirstMissingPositiveTest {
     @Test
     void testExample7() {
         var nums = new int[]{-1, -1, -2, -3, 5, 6, 2, 4, 5, 7, 1, 1};
-        Q41_FirstMissingPositive.Solution solution = new Q41_FirstMissingPositive.Solution();
+        Q41_FirstMissingPositive.Solution2 solution = new Q41_FirstMissingPositive.Solution2();
         assertEquals(3, solution.firstMissingPositive(nums));
     }
 }
