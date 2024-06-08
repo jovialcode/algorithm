@@ -5,7 +5,7 @@ import com.jovial.common.annotation.Category;
 
 import java.util.Arrays;
 
-@Category(QuestionCategory.BRUTAL_FORCE)
+@Category(QuestionCategory.EFFICIENCY)
 public class Q41_FirstMissingPositive {
     public static class Solution {
         public int firstMissingPositive(int[] nums) {

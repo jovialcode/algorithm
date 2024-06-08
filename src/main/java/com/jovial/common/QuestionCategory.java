@@ -22,5 +22,6 @@ public enum QuestionCategory {
     DIVIDE_CONQUER,
     TRIE,
     HEAP,
-    SLIDING_WINDOW
+    SLIDING_WINDOW,
+    EFFICIENCY
 }
