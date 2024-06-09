@@ -1,3 +1,5 @@
 .gradle
 .idea
 build
+
+src/main/java/com/jovial/question/codetest
