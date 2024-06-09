@@ -1,6 +1,5 @@
 package com.jovial.question.codetest;
 
-import com.jovial.question.codetest.day240608.Question1;
 import org.junit.jupiter.api.Test;
 
 class Question1Test {

@@ -1,9 +1,6 @@
 package com.jovial.question.codetest;
 
-import com.jovial.question.codetest.day240608.Question2;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Question12Test {
     @Test
