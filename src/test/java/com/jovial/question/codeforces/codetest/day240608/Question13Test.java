@@ -1,6 +1,9 @@
-package com.jovial.question.codetest;
+package com.jovial.question.codeforces.codetest.day240608;
 
+import com.jovial.question.codetest.day240608.Question3;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Question13Test {
     @Test
