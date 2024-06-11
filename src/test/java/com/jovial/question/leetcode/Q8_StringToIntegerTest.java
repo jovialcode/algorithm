@@ -52,4 +52,10 @@ class Q8_StringToIntegerTest {
         Q8_StringToInteger.Solution solution = new Q8_StringToInteger.Solution();
         assertEquals(2147483647, solution.myAtoi("9223372036854775808"));
     }
+
+    @Test
+    void testExample9(){
+        Q8_StringToInteger.Solution solution = new Q8_StringToInteger.Solution();
+        assertEquals(2147483647, solution.myAtoi("2147483648"));
+    }
 }

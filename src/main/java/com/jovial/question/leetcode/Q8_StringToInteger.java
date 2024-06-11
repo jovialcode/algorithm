@@ -14,15 +14,15 @@ public class Q8_StringToInteger {
             String strip = s.strip();
             if (strip.isEmpty()) return 0;
             //step2
-            boolean minus = false;
+            int minus = 1;
             if (strip.charAt(0) == '-') {
-                minus = true;
+                minus = -1;
                 strip = strip.substring(1);
             } else if (strip.charAt(0) == '+') {
                 strip = strip.substring(1);
             }
-            //step3
 
+            //step3
             List<Integer> ans = new ArrayList<>();
             for (int i = 0; i < strip.length(); i++) {
                 int digit = strip.charAt(i) - '0';
@@ -32,28 +32,23 @@ public class Q8_StringToInteger {
 
             if (ans.size() == 0) return 0;
 
-            int up = 0;
-            long answer = 0;
-
+            // solve
+            int answer = 0;
             int hasZero = 0;
-            for (int i = 0; i < ans.size(); i++) {
-                if (ans.get(i) != 0) break;
+            int maxValue = Integer.MAX_VALUE;
+            int minValue = Integer.MIN_VALUE;
+
+            for (Integer an : ans) {
+                if (an != 0) break;
                 hasZero += 1;
             }
 
-            if(ans.size() - hasZero > 10 && minus) return -2147483648;
-            if(ans.size() - hasZero > 10) return 2147483647;
-            for (int i = ans.size() - 1; i >= hasZero; i--) {
-                answer += (long) (ans.get(i) * (long) Math.pow(10, up++));
+            if (ans.size() - hasZero > 10) return (minus == 1) ? maxValue : minValue;
+            for (int i = hasZero; i < ans.size(); i++) {
+                answer += answer * 10 + ans.get(i);
             }
 
-            if (minus)
-                answer = -answer;
-
-            if (answer < -2147483648) answer = -2147483648;
-            if (answer > 2147483647) answer = 2147483647;
-
-            return (int) answer;
+            return minus * answer;
         }
     }
 }
