@@ -19,7 +19,7 @@ class Q44_WildcardMatchingTest {
         var s = "aa";
         var p = "*";
 
-        Q44_WildcardMatching.Solution solution = new Q44_WildcardMatching.Solution();
+        Q44_WildcardMatching.RefineSolution solution = new Q44_WildcardMatching.RefineSolution();
         assertTrue(solution.isMatch(s, p));
     }
 
@@ -28,7 +28,7 @@ class Q44_WildcardMatchingTest {
         var s = "abca";
         var p = "*?a";
 
-        Q44_WildcardMatching.Solution solution = new Q44_WildcardMatching.Solution();
+        Q44_WildcardMatching.RefineSolution solution = new Q44_WildcardMatching.RefineSolution();
         assertTrue(solution.isMatch(s, p));
     }
 
@@ -37,7 +37,7 @@ class Q44_WildcardMatchingTest {
         var s = "cb";
         var p = "?a";
 
-        Q44_WildcardMatching.Solution solution = new Q44_WildcardMatching.Solution();
+        Q44_WildcardMatching.RefineSolution solution = new Q44_WildcardMatching.RefineSolution();
         assertFalse(solution.isMatch(s, p));
     }
 
@@ -46,16 +46,35 @@ class Q44_WildcardMatchingTest {
         var s = "acdcb";
         var p = "a*c?b";
 
-        Q44_WildcardMatching.Solution solution = new Q44_WildcardMatching.Solution();
+        Q44_WildcardMatching.RefineSolution solution = new Q44_WildcardMatching.RefineSolution();
         assertFalse(solution.isMatch(s, p));
     }
 
+
     @Test
-    void testExample6(){
+    void testExample7(){
         var s = "adceb";
         var p = "*a*b";
 
-        Q44_WildcardMatching.Solution solution = new Q44_WildcardMatching.Solution();
+        Q44_WildcardMatching.RefineSolution solution = new Q44_WildcardMatching.RefineSolution();
+        assertTrue(solution.isMatch(s, p));
+    }
+
+    @Test
+    void testExample8(){
+        var s = "";
+        var p = "******";
+
+        Q44_WildcardMatching.RefineSolution solution = new Q44_WildcardMatching.RefineSolution();
+        assertTrue(solution.isMatch(s, p));
+    }
+
+    @Test
+    void testExample9(){
+        var s = "abcabczzzde";
+        var p = "*abc???de*";
+
+        Q44_WildcardMatching.RefineSolution solution = new Q44_WildcardMatching.RefineSolution();
         assertTrue(solution.isMatch(s, p));
     }
 }
