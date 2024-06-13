@@ -74,8 +74,6 @@ public class Q44_WildcardMatching {
             for (int[] v : visit) {
                 Arrays.fill(v, -1);
             }
-
-
             return proceed(visit, s, 0, p, 0) == 1;
         }
 
