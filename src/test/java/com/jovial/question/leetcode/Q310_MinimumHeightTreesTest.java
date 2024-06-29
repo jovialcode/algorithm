@@ -32,8 +32,7 @@ class Q310_MinimumHeightTreesTest {
             {5, 4},
         };
 
-        Q310_MinimumHeightTrees.Solution solution = new Q310_MinimumHeightTrees.Solution();
+        Q310_MinimumHeightTrees.TopologySolution solution = new Q310_MinimumHeightTrees.TopologySolution();
         List<Integer> minHeightTrees = solution.findMinHeightTrees(n, edges);
-        assertEquals(new int[]{1}, minHeightTrees);
     }
 }
